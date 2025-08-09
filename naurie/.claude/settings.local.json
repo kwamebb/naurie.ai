@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "WebFetch(domain:brand-at.webflow.io)",
+      "Bash(mkdir:*)"
+    ],
+    "deny": []
+  }
+}
