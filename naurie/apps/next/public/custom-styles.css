@@ -1,0 +1,87 @@
+/* Custom Naurie Styles - Minimal Version */
+
+/* Import Satoshi Font */
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&display=swap');
+
+/* Replace fonts with Satoshi */
+.framer-text {
+  font-family: 'Satoshi', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* Fix navigation layout - center logo, keep button right */
+.framer-1oqcib4 {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  position: relative !important;
+  width: 100% !important;
+  padding: 0 2rem !important;
+}
+
+.framer-1y0b1mi {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  z-index: 1 !important;
+}
+
+.framer-1qj7btq-container {
+  margin-left: auto !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* Navigation glassmorphism */
+.framer-70quch {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Fix pixelated icons - make them smooth */
+[style*="image-rendering:pixelated"] {
+  image-rendering: auto !important;
+}
+
+/* Replace pixelated arrow icons with smooth versions */
+.framer-12nvd8w,
+.framer-1lemql {
+  image-rendering: auto !important;
+  filter: none !important;
+}
+
+/* Override the inline SVG background images with smooth versions */
+div[style*="image-rendering:pixelated"] {
+  image-rendering: auto !important;
+}
+
+/* Smooth all SVG icons */
+[data-framer-component-type="SVG"] {
+  image-rendering: auto !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Style for replaced smooth icons */
+.framer-12nvd8w svg,
+.framer-1lemql svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2.5;
+}
+
+/* Hide the pixelated background images */
+.framer-12nvd8w[style*="background-image"],
+.framer-1lemql[style*="background-image"] {
+  background-image: none !important;
+}
+
+/* Initially only show Julia to prevent flash, others start with opacity 0 */
+.framer-1nh6oa0,
+.framer-1hnwwh3 {
+  opacity: 0;
+}
+
+/* Show middle agent (Julia) by default */
+.framer-1k1rn8i {
+  opacity: 1;
+}

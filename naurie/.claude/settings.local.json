@@ -3,7 +3,8 @@
     "allow": [
       "Bash(npm run dev:*)",
       "WebFetch(domain:brand-at.webflow.io)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(npm install)"
     ],
     "deny": []
   }
