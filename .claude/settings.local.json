@@ -11,7 +11,10 @@
       "Bash(cp:*)",
       "Bash(sed:*)",
       "Bash(mv:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(npx next start:*)",
+      "Bash(npx next dev:*)",
+      "Bash(taskkill:*)"
     ],
     "deny": []
   }

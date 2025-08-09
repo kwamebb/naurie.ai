@@ -4,7 +4,8 @@
       "Bash(npm run dev:*)",
       "WebFetch(domain:brand-at.webflow.io)",
       "Bash(mkdir:*)",
-      "Bash(npm install)"
+      "Bash(npm install)",
+      "Bash(grep:*)"
     ],
     "deny": []
   }
