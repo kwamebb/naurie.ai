@@ -5,7 +5,10 @@
       "WebFetch(domain:brand-at.webflow.io)",
       "Bash(mkdir:*)",
       "Bash(npm install)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(sed:*)",
+      "Bash(npm install:*)",
+      "Bash(vercel:*)"
     ],
     "deny": []
   }
