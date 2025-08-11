@@ -84,6 +84,16 @@ module.exports = {
   },
   reactStrictMode: false, // reanimated doesn't support this on web
 
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/naurie.html',
+        permanent: false,
+      },
+    ]
+  },
+
   ...withWebpack,
   ...withTurpopack,
 }
